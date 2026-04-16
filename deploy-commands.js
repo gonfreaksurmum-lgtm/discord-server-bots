@@ -12,9 +12,7 @@ for (const folder of fs.readdirSync(root)) {
 
   for (const file of fs.readdirSync(folderPath).filter((f) => f.endsWith('.js'))) {
     const command = require(path.join(folderPath, file));
-    if (command?.data?.toJSON) {
-      commands.push(command.data.toJSON());
-    }
+    if (command?.data?.toJSON) commands.push(command.data.toJSON());
   }
 }
 
@@ -23,14 +21,12 @@ const rest = new REST({ version: '10' }).setToken(config.token);
 (async () => {
   try {
     console.log(`Deploying ${commands.length} global commands...`);
-
     await rest.put(
       Routes.applicationCommands(config.clientId),
       { body: commands }
     );
-
     console.log('Global commands deployed.');
   } catch (error) {
-    console.error('Deploy failed:', error);
+    console.error(error);
   }
 })();
