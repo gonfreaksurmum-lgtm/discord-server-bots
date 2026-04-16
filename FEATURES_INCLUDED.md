@@ -1,0 +1,65 @@
+# Included / Seeded systems
+
+## Already built or strongly wired
+- Server builder from zero
+- Role + channel ID persistence
+- Self-role panels
+- Permission role
+- Custom user-owned roles
+- Tickets
+- Suggestions
+- Giveaways + reroll + scheduler
+- Level system + rewards
+- Starboard
+- Invite tracking foundation
+- Join/leave logging
+- Role change logging
+- Tempban expiry
+- Member count counters
+- Snipe
+- Polls
+- Utility/fun commands
+- Nuke
+- Announcements
+
+## Easy next additions on top of this base
+- Warning system
+- Mute timeouts
+- Transcript export
+- Application system
+- Verification panel
+- AFK system
+- Sticky messages
+- Join-to-create voice
+- Economy
+- Shop
+- Marriage/social profiles
+- Confession system
+- Bump reminders
+- Birthday system
+- Media-only channels
+- Reaction roles via select menus
+- Auto responder
+- Auto threader
+- Keyword alerts
+- Forum helpers
+- Advanced anti-raid
+- Backup/export config
+- Multiple build themes
+- Role shop
+- Case system
+- Modmail
+- Forms and applications
+- Vanity/invite rewards
+- Partnership queue
+- Custom welcome cards
+- Daily rewards
+- Reputation system
+- Wall of fame/shame slash commands
+- Advanced starboard filters
+- NSFW channel automation
+- Booster perks
+- Suggestion discussion threads
+- Per-channel XP settings
+- Cooldowns
+- Permission presets
