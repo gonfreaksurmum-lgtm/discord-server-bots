@@ -22,21 +22,14 @@ const rest = new REST({ version: '10' }).setToken(config.token);
 
 (async () => {
   try {
-    console.log('Config check:', {
-      hasToken: Boolean(config.token),
-      clientId: config.clientId,
-      guildId: config.guildId,
-      commandCount: commands.length,
-    });
-
-    console.log(`Deploying ${commands.length} commands...`);
+    console.log(`Deploying ${commands.length} global commands...`);
 
     await rest.put(
-      Routes.applicationGuildCommands(config.clientId, config.guildId),
+      Routes.applicationCommands(config.clientId),
       { body: commands }
     );
 
-    console.log('Done.');
+    console.log('Global commands deployed.');
   } catch (error) {
     console.error('Deploy failed:', error);
   }
