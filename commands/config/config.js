@@ -45,7 +45,7 @@ module.exports = {
           s.setName("channel").setDescription("Set the welcome channel")
             .addChannelOption((o) => o.setName("channel").setDescription("Welcome channel").addChannelTypes(ChannelType.GuildText).setRequired(true)))
         .addSubcommand((s) =>
-          s.setName("message").setDescription("Set the welcome message (supports {user} {mention} {server} {memberCount} {inviter} {inviteCode} {inviteCount})")
+          s.setName("message").setDescription("Set the welcome message (supports variables)")
             .addStringOption((o) => o.setName("title").setDescription("Embed title"))
             .addStringOption((o) => o.setName("description").setDescription("Embed description")))
         .addSubcommand((s) =>
